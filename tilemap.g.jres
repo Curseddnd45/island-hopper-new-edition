@@ -1,0 +1,66 @@
+{
+    "transparency16": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile1": {
+        "data": "hwQQABAAAAB3d3d3d3d3d3d3d3d3d3d3d3fHzMzMzMx3x8x/+f///3fM/5/3Vf/1d/xf////9V93XP//9V///3fMzF9V/1/1d8fMzMzMzMx3zPWVRFVf/3f8X3Vb///1d8z/RWhV//93x8wv8/9f/3d3x8z/////d3d3zMz8X/93d3d3d8zMzA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile"
+    },
+    "tile2": {
+        "data": "hwQQABAAAAB3d3d3d3d3d3d3d3d3d3d3d3fHzMzMzMx3x8z//////3fM////////d/z///////93/P///////3fMzP//////d8fMzMzMzMx3zP///////3f8////////d8z///////93x8z//////3d3x8z/////d3d3zMz8//93d3d3d8zMzA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile0"
+    },
+    "tile3": {
+        "data": "hwQQABAAAADd3d3d3d3d3R0RERERERHRHRERHR0dEdEdEdHd3d0R0R0RER0dHRHRHREREREREdEdERERERER0d3d3d3d3d3dLSIiIiIiItItIiIiIiIi0i0iQkIiIiLSLSJERCQiItItIiIkJCIi0i0iIiIiIiLSLSIiIiIiItItIiIiIiIi0g==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile1"
+    },
+    "tile4": {
+        "data": "hwQQABAAAAAtIiIiIiIi0i0iIiIiIiLSLSIiIiIiItItIiIiIiIi0i1CREIiIiLSLUJERCQiItItQiJEIiIi0i0iIiIiIiLSLSIiIiIiItItIiIiIiIi0i0iIiIiQkLSLSIiIiJERNQtIiIiREJC0i0iIiIiQkLSLSIiIiIiItLd3d3d3d3d3Q==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile2"
+    },
+    "tile5": {
+        "data": "hwQQABAAAAAAu7u7y7y7C7Du7u677M6760Tk7rvs7rtLRETuu+zuC0tERO677O4LS0RE7rvs7gtLRETuVVXuC0tERO5FVO4LS0RE7kVU7gtLRETuVVXuC0tERO677O4LS0RE7rvs7gtLRETuu+zuC+tE5O677O67sO7u7rvszrsAu7u7y7y7Cw==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "chestClosed"
+    },
+    "tile6": {
+        "data": "hwQQABAAAACwuwu7u7u7C+vuu8zM6867S+S7zMzr7rtLRLvMzOvuC0tEu8zM6+4LS0S7zMzr7gtLRLvLzOvuC0tEzbzM6+4LS0TNvMzr7gtLRLvLzOvuC0tEu8zM6+4LS0S7zMzr7gtLRLvMzOvuC0vku8zM6+67S+67zMzrzruwuwu7u7u7Cw==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "chestOpen"
+    },
+    "level1": {
+        "id": "level1",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxMDAwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAyMDIwMjAyMDIwMzAwMDAwMDAwMDAwMDAwMDAwMDA2MDQwNTA4MDgwOTA3MDAwMDAwMDAwMDAwMDAwMDAwMDYwODA4MDgwODA4MDcwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMjIyMjIyMDAwMDAwMDAyMDAwMDAyMDAwMDAwMDAwMjAwMDAwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==",
+        "tileset": [
+            "myTiles.transparency16",
+            "sprites.dungeon.darkGroundNorthWest0",
+            "sprites.dungeon.darkGroundNorth",
+            "sprites.dungeon.darkGroundNorthEast0",
+            "myTiles.tile3",
+            "myTiles.tile4",
+            "sprites.dungeon.darkGroundWest",
+            "sprites.dungeon.darkGroundEast",
+            "sprites.dungeon.darkGroundCenter",
+            "sprites.dungeon.chestClosed"
+        ],
+        "displayName": "level1"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myTiles"
+    }
+}
