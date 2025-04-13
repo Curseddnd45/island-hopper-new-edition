@@ -41,7 +41,7 @@
         "displayName": "chestOpen"
     },
     "tile7": {
-        "data": "hwQQABAAAADMzMzMzMzMzMzMzFVVzMzMzMzMxczMzMzMzMxVxczMzMzLzMXMvMzMzMzMxczMzMvMzMzFzMzMzLzMXFVVxMzMzMxFzMzFzMzMzEXMzMXMzMzMRczMxczMzMxFzMzFzMzMzEXMzMXMzMzMXFVVxMzMzMzMzMzMy8zMy8zMzMzMzA==",
+        "data": "hwQQABAAAADMzMzMzMzMzMzMzFVVzMzMzMzMxczMzMzMzMxVxczMzMzLzMXMvMzMzMzMxczMzMvMzMzFzMzMzLzMXFVVzMzMzMxFzMzFzMzMzEXMzMXMzMzMRczMxczMzMxFzMzFzMzMzEXMzMXMzMzMXFVVzMzMzMzMzMzMy8zMy8zMzMzMzA==",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
         "displayName": "myTile3"
