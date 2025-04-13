@@ -40,10 +40,16 @@
         "tilemapTile": true,
         "displayName": "chestOpen"
     },
+    "tile7": {
+        "data": "hwQQABAAAADMzMzMzMzMzMzMzFVVzMzMzMzMxczMzMzMzMxVxczMzMzLzMXMvMzMzMzMxczMzMvMzMzFzMzMzLzMXFVVxMzMzMxFzMzFzMzMzEXMzMXMzMzMRczMxczMzMxFzMzFzMzMzEXMzMXMzMzMXFVVxMzMzMzMzMzMy8zMy8zMzMzMzA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile3"
+    },
     "level1": {
         "id": "level1",
         "mimeType": "application/mkcd-tilemap",
-        "data": "MTAxMDAwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAyMDIwMjAyMDIwMzAwMDAwMDAwMDAwMDAwMDAwMDA2MDQwNTA4MDgwOTA3MDAwMDAwMDAwMDAwMDAwMDAwMDYwODA4MDgwODA4MDcwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMjIyMjIyMDAwMDAwMDAyMDAwMDAyMDAwMDAwMDAwMjAwMDAwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==",
+        "data": "MTAxMDAwMTAwMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDExMTAxMTExMTAwMTAyMDMwMTAyMDIwMjAyMDIwMzEwMTIxMDEwMTExMDA2MDgwZjA2MDQwNTA4MDgwOTA3MTAxMjEwMTExMTEwMDYwODA4MDYwODA4MDgwODA4MDcxMDEyMTExMDEwMTAwNjA4MDgwZTA4MDgwODA4MDgwNzEwMTIxMDEyMTExMDA2MDgwODA2MDgwODA4MDgwODA3MTIxMjEyMTIxMTEwMDYwODA4MDYwODA4MDgwODA4MDcxMjExMTAxMTExMTAwYjBjMGEwYjBjMGMwZDA4MDgwNzEyMTExMDEwMTAxMDEwMTAxMDEwMTAxMDEwMGIwYzBhMTIxMTEyMTIxMTEyMTExMDExMTAxMTExMTAxMDEwMTAxMjExMTAxMjExMTExMTExMTExMDExMTExMTExMTAxMTEyMTExMDEwMTAxMDExMTIxMTExMTIxMTExMTExMDExMTIxMTEwMTExMTExMTAxMDEyMTAxMjEyMTAxMjExMTAxMTExMTAxMTEwMTAxMTEyMTIxMDEwMTExMTEyMTExMDEwMTExMDExMTAxMDExMTExMTEyMTIxMjExMTExMTExMTExMjEwMTExMDEwMTExMTEwMTAxMDEwMTAxMDEwMTIxMDExMDAwMDAwMDAwMDAwMDAwMDAwMDAyMjIyMjIyMjIyMDAwMDAwMDIyMDAwMDAyMDAwMDAwMDAyMjAwMDAwMjAwMDAwMDAwMjAwMDAwMDIwMDAwMDAwMDIyMDAwMDAyMDAwMDAwMDAyMjAwMDAwMjAwMDAwMDAyMjIyMjIwMDIwMDAwMDAwMDAwMDAwMjAyMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==",
         "tileset": [
             "myTiles.transparency16",
             "sprites.dungeon.darkGroundNorthWest0",
@@ -54,7 +60,16 @@
             "sprites.dungeon.darkGroundWest",
             "sprites.dungeon.darkGroundEast",
             "sprites.dungeon.darkGroundCenter",
-            "sprites.dungeon.chestClosed"
+            "sprites.dungeon.chestClosed",
+            "sprites.dungeon.darkGroundSouthEast0",
+            "sprites.dungeon.darkGroundSouthWest0",
+            "sprites.dungeon.darkGroundSouth",
+            "sprites.dungeon.doorOpenSouth",
+            "sprites.dungeon.doorOpenWest",
+            "myTiles.tile7",
+            "sprites.castle.tileGrass2",
+            "sprites.castle.tileGrass1",
+            "sprites.castle.tileGrass3"
         ],
         "displayName": "level1"
     },
