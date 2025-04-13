@@ -194,7 +194,7 @@ controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
                     Food_menu.removeAt(selectedIndex)
                     myMenu.moveSelection(miniMenu.MoveDirection.Up)
                 })
-            } else {
+            } else if (story.checkLastAnswer("Essentials: Water Supply")) {
                 Menuopen = true
                 myMenu = miniMenu.createMenuFromArray(Water_Supply_menu)
                 myMenu.setTitle("Backpack")
