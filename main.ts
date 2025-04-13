@@ -1,5 +1,5 @@
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sprite, location) {
-    if (location == tiles.getTileLocation(12, 2)) {
+    if (location.column == 12 && location.row == 2) {
         Waepons = true
     }
     tiles.setTileAt(location, assets.tile`chestOpen`)
@@ -10,7 +10,7 @@ controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
         if (Waepons == true) {
             story.showPlayerChoices("Essentials", "Weapons", "Cancel")
             if (story.checkLastAnswer("Weapons")) {
-                story.showPlayerChoices("Weapons: Melee", "Weapons: Ranged", "Weapons: Armour")
+                story.showPlayerChoices("Weapons: Melee", "Weapons: Ranged", "Weapons: Armour", "Cancel")
             } else {
                 story.showPlayerChoices("Essentials: Food", "Essentials: Water Supply", "Cancel")
                 if (story.checkLastAnswer("Essentials: Food")) {
@@ -134,7 +134,7 @@ controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
                 }
             }
         } else {
-            story.showPlayerChoices("Essentials: Food", "Essentials: Water Supply")
+            story.showPlayerChoices("Essentials: Food", "Essentials: Water Supply", "Cancel")
             if (story.checkLastAnswer("Essentials: Food")) {
                 Menuopen = true
                 myMenu = miniMenu.createMenuFromArray(Food_menu)
