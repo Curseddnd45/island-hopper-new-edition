@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v2.0.48/---simulator","cdnUrl":"https://cdn.makecode.com","version":"1.3.0","target":"arcade","targetVersion":"2.0.48","repo":"curseddnd45/island-hopper-new-edition"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v2.0.48/---simulator","cdnUrl":"https://cdn.makecode.com","version":"1.3.1","target":"arcade","targetVersion":"2.0.48","repo":"curseddnd45/island-hopper-new-edition"}
 // total=2507954 new=21.20% cached=74.33% other=4.47%
 (function (ectx) {
 'use strict';
@@ -608,7 +608,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P30791(s) {
+function _main___P31224(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1107,44 +1107,44 @@ switch (step) {
   case 45:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.tmp_0.arg2 = inline__P30596;
+    s.tmp_0.arg2 = inline__P30983;
     s.callLocIdx = 97; s.pc = 44; return s.tmp_0;
   case 44:
     r0 = s.retval;
     s.tmp_0 = scene_onOverlapTile__P2476_mk(s);
     s.tmp_0.arg0 = globals.Player___2496;
     s.tmp_0.arg1 = globals.chestClosed___4018;
-    s.tmp_0.arg2 = inline__P30617;
+    s.tmp_0.arg2 = inline__P31004;
     s.callLocIdx = 102; s.pc = 46; return s.tmp_0;
   case 46:
     r0 = s.retval;
     s.tmp_0 = controller_Button_onEvent__P2210_mk(s);
     s.tmp_0.arg0 = globals.menu___2133;
     s.tmp_0.arg1 = 2049;
-    s.tmp_0.arg2 = inline__P30641;
+    s.tmp_0.arg2 = inline__P31028;
     s.callLocIdx = 130; s.pc = 47; return s.tmp_0;
   case 47:
     r0 = s.retval;
-    globals.myMenu2___30631 = (false);
+    globals.myMenu2___31018 = (false);
     r0 = pxsim_Array__mk();
-    globals.Item_menu___30566 = (r0);
-    globals.myMenu___30529 = (null);
-    globals.Menuopen___30526 = (false);
+    globals.Item_menu___30953 = (r0);
+    globals.myMenu___30916 = (null);
+    globals.Menuopen___30913 = (false);
     r0 = pxsim_Array__mk();
-    globals.Water_Supply_menu___30692 = (r0);
+    globals.Water_Supply_menu___31079 = (r0);
     r0 = pxsim_Array__mk();
-    globals.Food_menu___30533 = (r0);
-    globals.mySprite___30544 = (null);
-    globals.Waepons___30628 = (false);
-    globals.Waepons___30628 = (false);
+    globals.Food_menu___30920 = (r0);
+    globals.mySprite___30931 = (null);
+    globals.Waepons___31015 = (false);
+    globals.Waepons___31015 = (false);
     s.tmp_0 = sprites_create__P2289_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex30725);
+    r0 = pxsim.image.ofBuffer(_hex31112);
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = globals.Player___2496;
     s.callLocIdx = 139; s.pc = 48; return s.tmp_0;
   case 48:
     r0 = s.retval;
-    globals.mySprite___30544 = (r0);
+    globals.mySprite___30931 = (r0);
     s.tmp_0 = tiles_setCurrentTilemap__P2781_mk(s);
     s.tmp_1 = helpers_getTilemapByName__P3368_mk(s);
     s.tmp_1.arg0 = "level1";
@@ -1156,19 +1156,19 @@ switch (step) {
   case 49:
     r0 = s.retval;
     s.tmp_0 = scene_cameraFollowSprite__P2907_mk(s);
-    s.tmp_0.arg0 = globals.mySprite___30544;
+    s.tmp_0.arg0 = globals.mySprite___30931;
     s.callLocIdx = 142; s.pc = 51; return s.tmp_0;
   case 51:
     r0 = s.retval;
     s.tmp_0 = controller_moveSprite__P2181_mk(s);
-    s.tmp_0.arg0 = globals.mySprite___30544;
+    s.tmp_0.arg0 = globals.mySprite___30931;
     s.tmp_0.arg1 = 100;
     s.tmp_0.arg2 = 100;
     s.callLocIdx = 143; s.pc = 52; return s.tmp_0;
   case 52:
     r0 = s.retval;
     s.tmp_0 = tiles_placeOnRandomTile__P2791_mk(s);
-    s.tmp_0.arg0 = globals.mySprite___30544;
+    s.tmp_0.arg0 = globals.mySprite___30931;
     s.tmp_1 = helpers_getTileByName__P3371_mk(s);
     s.tmp_1.arg0 = "myTile1";
     s.callLocIdx = 144; s.pc = 54; return s.tmp_1;
@@ -1182,7 +1182,7 @@ switch (step) {
     s.tmp_0 = r0;
     s.tmp_2 = miniMenu_createMenuItem__P4522_mk(s);
     s.tmp_2.arg0 = "Rations";
-    r0 = pxsim.image.ofBuffer(_hex30742);
+    r0 = pxsim.image.ofBuffer(_hex31129);
     s.tmp_2.arg1 = r0;
     s.callLocIdx = 146; s.pc = 55; return s.tmp_2;
   case 55:
@@ -1191,19 +1191,19 @@ switch (step) {
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_1);
     s.tmp_4 = miniMenu_createMenuItem__P4522_mk(s);
     s.tmp_4.arg0 = "Rations";
-    r0 = pxsim.image.ofBuffer(_hex30745);
+    r0 = pxsim.image.ofBuffer(_hex31132);
     s.tmp_4.arg1 = r0;
     s.callLocIdx = 147; s.pc = 56; return s.tmp_4;
   case 56:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_3);
-    globals.Food_menu___30533 = (s.tmp_0);
+    globals.Food_menu___30920 = (s.tmp_0);
     r0 = pxsim_Array__mk();
     s.tmp_0 = r0;
     s.tmp_2 = miniMenu_createMenuItem__P4522_mk(s);
     s.tmp_2.arg0 = "Small Bottle of Water";
-    r0 = pxsim.image.ofBuffer(_hex30750);
+    r0 = pxsim.image.ofBuffer(_hex31137);
     s.tmp_2.arg1 = r0;
     s.callLocIdx = 148; s.pc = 57; return s.tmp_2;
   case 57:
@@ -1212,26 +1212,26 @@ switch (step) {
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_1);
     s.tmp_4 = miniMenu_createMenuItem__P4522_mk(s);
     s.tmp_4.arg0 = "Large Bottle of Water";
-    r0 = pxsim.image.ofBuffer(_hex30753);
+    r0 = pxsim.image.ofBuffer(_hex31140);
     s.tmp_4.arg1 = r0;
     s.callLocIdx = 149; s.pc = 58; return s.tmp_4;
   case 58:
     r0 = s.retval;
     s.tmp_3 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_3);
-    globals.Water_Supply_menu___30692 = (s.tmp_0);
-    globals.Menuopen___30526 = (false);
+    globals.Water_Supply_menu___31079 = (s.tmp_0);
+    globals.Menuopen___30913 = (false);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-_main___P30791.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-mini-menu/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P30791.continuations = [  ]
+_main___P31224.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-mini-menu/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P31224.continuations = [  ]
 
-function _main___P30791_mk(s) {
+function _main___P31224_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P30791, depth: s.depth + 1,
+        parent: s, fn: _main___P31224, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1282,12 +1282,12 @@ const _hex7355 = pxsim.BufferMethods.createBufferFromHex("8704100010000000dddddd
 const _hex7359 = pxsim.BufferMethods.createBufferFromHex("87041000100000002d222222222222d22d222222222222d22d222222222222d22d222222222222d22d424442222222d22d424444242222d22d422244222222d22d222222222222d22d222222222222d22d222222222222d22d222222224242d22d222222224444d42d222222444242d22d222222224242d22d222222222222d2dddddddddddddddd")
 const _hex7363 = pxsim.BufferMethods.createBufferFromHex("870410001000000000bbbbbbcbbcbb0bb0eeeeeebbeccebbeb44e4eebbeceebb4b4444eebbecee0b4b4444eebbecee0b4b4444eebbecee0b4b4444ee5555ee0b4b4444ee4554ee0b4b4444ee4554ee0b4b4444ee5555ee0b4b4444eebbecee0b4b4444eebbecee0b4b4444eebbecee0beb44e4eebbeceebbb0eeeeeebbeccebb00bbbbbbcbbcbb0b")
 const _hex7367 = pxsim.BufferMethods.createBufferFromHex("8704100010000000b0bb0bbbbbbbbb0bebeebbccccebcebb4be4bbccccebeebb4b44bbccccebee0b4b44bbccccebee0b4b44bbccccebee0b4b44bbcbccebee0b4b44cdbcccebee0b4b44cdbcccebee0b4b44bbcbccebee0b4b44bbccccebee0b4b44bbccccebee0b4b44bbccccebee0b4be4bbccccebeebb4beebbccccebcebbb0bb0bbbbbbbbb0b")
-const _hex7371 = pxsim.BufferMethods.createBufferFromHex("8704100010000000cccccccccccccccccccccc5555ccccccccccccc5cccccccccccccc55c5cccccccccbccc5ccbcccccccccccc5cccccccbccccccc5ccccccccbccc5c5555c4cccccccc45ccccc5cccccccc45ccccc5cccccccc45ccccc5cccccccc45ccccc5cccccccc45ccccc5cccccccc5c5555c4cccccccccccccccccbcccccbcccccccccccc")
-const _hex30725 = pxsim.BufferMethods.createBufferFromHex("8704100010000000000000000000000000000000000000000000000088000000000000808800000020220088080000002022006696994444007777679699444400a7876796990000007787679699000000a7876796994444007777679699444420220066969900002022008808000000000000808800000000000000880000000000000000000000")
-const _hex30742 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000000000000000000000000000000000000e00000000000000ee00000000000000ee0e000000000077eeee000000007077eeee0e0000006066eeee0e0000006044eeee0e0000004044eeee0e000000a0a5eeee000000005055ee0e000000000000ee000000000000000e00000000000000000000000000000000000000")
-const _hex30745 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000000000000000000000000000000000000e00000000000000ee00000000005055ee0e00000000a0a5eeee000000004044eeee0e0000006044eeee0e0000006066eeee0e0000007077eeee0e0000000077eeee000000000000ee0e000000000000ee000000000000000e00000000000000000000000000000000000000")
-const _hex30750 = pxsim.BufferMethods.createBufferFromHex("87041000100000000000000000000000000000000000000000000000000000000000000000000000000000886611110000000088661111000000998262111100000099282611110000000088661111000000008866111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
-const _hex30753 = pxsim.BufferMethods.createBufferFromHex("87041000100000000000000000000000000000000000000000000000000000000000001011001011000011111166161100001112116156559999112111665655999911111261161199991121116616119999111112611611000011211166161100001112116116110000001011001011000000000000000000000000000000000000000000000000")
+const _hex7371 = pxsim.BufferMethods.createBufferFromHex("8704100010000000cccccccccccccccccccccc5555ccccccccccccc5cccccccccccccc55c5cccccccccbccc5ccbcccccccccccc5cccccccbccccccc5ccccccccbccc5c5555cccccccccc45ccccc5cccccccc45ccccc5cccccccc45ccccc5cccccccc45ccccc5cccccccc45ccccc5cccccccc5c5555cccccccccccccccccccbcccccbcccccccccccc")
+const _hex31112 = pxsim.BufferMethods.createBufferFromHex("8704100010000000000000000000000000000000000000000000000088000000000000808800000020220088080000002022006696994444007777679699444400a7876796990000007787679699000000a7876796994444007777679699444420220066969900002022008808000000000000808800000000000000880000000000000000000000")
+const _hex31129 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000000000000000000000000000000000000e00000000000000ee00000000000000ee0e000000000077eeee000000007077eeee0e0000006066eeee0e0000006044eeee0e0000004044eeee0e000000a0a5eeee000000005055ee0e000000000000ee000000000000000e00000000000000000000000000000000000000")
+const _hex31132 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000000000000000000000000000000000000e00000000000000ee00000000005055ee0e00000000a0a5eeee000000004044eeee0e0000006044eeee0e0000006066eeee0e0000007077eeee0e0000000077eeee000000000000ee0e000000000000ee000000000000000e00000000000000000000000000000000000000")
+const _hex31137 = pxsim.BufferMethods.createBufferFromHex("87041000100000000000000000000000000000000000000000000000000000000000000000000000000000886611110000000088661111000000998262111100000099282611110000000088661111000000008866111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
+const _hex31140 = pxsim.BufferMethods.createBufferFromHex("87041000100000000000000000000000000000000000000000000000000000000000001011001011000011111166161100001112116156559999112111665655999911111261161199991121116616119999111112611611000011211166161100001112116116110000001011001011000000000000000000000000000000000000000000000000")
 
 
 
@@ -2118,7 +2118,7 @@ function myImages_inline__P7439_mk(s) {
 
 
 
-function inline__P30596(s) {
+function inline__P30983(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2154,14 +2154,14 @@ switch (step) {
     s.tmp_4 = r0;
     s.tmp_6 = miniMenu_createMenuItem__P4522_mk(s);
     s.tmp_6.arg0 = "Key";
-    r0 = pxsim.image.ofBuffer(_hex30610);
+    r0 = pxsim.image.ofBuffer(_hex30997);
     s.tmp_6.arg1 = r0;
     s.callLocIdx = 95; s.pc = 5; return s.tmp_6;
   case 5:
     r0 = s.retval;
     s.tmp_5 = r0;
     r0 = pxsim_Array__push(s.tmp_4, s.tmp_5);
-    globals.Item_menu___30566 = (s.tmp_4);
+    globals.Item_menu___30953 = (s.tmp_4);
   case 3:
   case 4:
     s.tmp_0 = tiles_setTileAt__P2782_mk(s);
@@ -2174,12 +2174,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P30596.info = {"start":6350,"length":947,"line":123,"column":61,"endLine":145,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
+inline__P30983.info = {"start":6350,"length":947,"line":123,"column":61,"endLine":145,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
 
-function inline__P30596_mk(s) {
+function inline__P30983_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P30596, depth: s.depth + 1,
+        parent: s, fn: inline__P30983, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2192,12 +2192,12 @@ function inline__P30596_mk(s) {
   arg1: undefined,
 } }
 
-const _hex30610 = pxsim.BufferMethods.createBufferFromHex("87041000100000000000000000000000000000555500000000000005000000000000005505000000000000050000000000000005000000000000000500000000000050555504000000004500000500000000450000050000000045000005000000004500000500000000450000050000000050555504000000000000000000000000000000000000")
+const _hex30997 = pxsim.BufferMethods.createBufferFromHex("87041000100000000000000000000000000000555500000000000005000000000000005505000000000000050000000000000005000000000000000500000000000050555500000000004500000500000000450000050000000045000005000000004500000500000000450000050000000050555500000000000000000000000000000000000000")
 
 
 
 
-function inline__P30617(s) {
+function inline__P31004(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2229,8 +2229,8 @@ switch (step) {
     s.tmp_3 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_3);
     if (!r0) { step = 3; continue; }
-    globals.Waepons___30628 = (true);
-    globals.myMenu2___30631 = (true);
+    globals.Waepons___31015 = (true);
+    globals.myMenu2___31018 = (true);
   case 3:
   case 4:
     s.tmp_0 = tiles_setTileAt__P2782_mk(s);
@@ -2248,12 +2248,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P30617.info = {"start":7367,"length":191,"line":146,"column":68,"endLine":152,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
+inline__P31004.info = {"start":7367,"length":191,"line":146,"column":68,"endLine":152,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
 
-function inline__P30617_mk(s) {
+function inline__P31004_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P30617, depth: s.depth + 1,
+        parent: s, fn: inline__P31004, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2267,7 +2267,7 @@ function inline__P30617_mk(s) {
 
 
 
-function inline__P30641(s) {
+function inline__P31028(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2277,22 +2277,22 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    r0 = (globals.Menuopen___30526 == false);
+    r0 = (globals.Menuopen___30913 == false);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 25; continue; }
     s.tmp_1 = controller_moveSprite__P2181_mk(s);
-    s.tmp_1.arg0 = globals.mySprite___30544;
+    s.tmp_1.arg0 = globals.mySprite___30931;
     s.tmp_1.arg1 = 0;
     s.tmp_1.arg2 = 0;
     s.callLocIdx = 103; s.pc = 27; return s.tmp_1;
   case 27:
     r0 = s.retval;
-    r0 = (globals.Waepons___30628 == true);
+    r0 = (globals.Waepons___31015 == true);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 19; continue; }
-    r0 = (globals.myMenu2___30631 == true);
+    r0 = (globals.myMenu2___31018 == true);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 1; continue; }
@@ -2308,7 +2308,7 @@ switch (step) {
     s.callLocIdx = 105; s.pc = 29; return s.tmp_0;
   case 29:
     r0 = s.retval;
-    globals.myMenu2___30631 = (false);
+    globals.myMenu2___31018 = (false);
   case 1:
   case 2:
     s.tmp_0 = story_showPlayerChoices__P4635_mk(s);
@@ -2345,7 +2345,7 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
-    s.tmp_2 = Melee__P30660_mk(s);
+    s.tmp_2 = Melee__P31047_mk(s);
     s.callLocIdx = 110; s.pc = 34; return s.tmp_2;
   case 34:
     r0 = s.retval;
@@ -2359,7 +2359,7 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 4; continue; }
-    s.tmp_2 = Ranged__P30523_mk(s);
+    s.tmp_2 = Ranged__P30910_mk(s);
     s.callLocIdx = 112; s.pc = 36; return s.tmp_2;
   case 36:
     r0 = s.retval;
@@ -2373,7 +2373,7 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 5; continue; }
-    s.tmp_2 = Armour__P30637_mk(s);
+    s.tmp_2 = Armour__P31024_mk(s);
     s.callLocIdx = 114; s.pc = 38; return s.tmp_2;
   case 38:
     r0 = s.retval;
@@ -2408,7 +2408,7 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 10; continue; }
-    s.tmp_2 = Food_func__P30524_mk(s);
+    s.tmp_2 = Food_func__P30911_mk(s);
     s.callLocIdx = 118; s.pc = 42; return s.tmp_2;
   case 42:
     r0 = s.retval;
@@ -2422,7 +2422,7 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 11; continue; }
-    s.tmp_2 = Water__P30673_mk(s);
+    s.tmp_2 = Water__P31060_mk(s);
     s.callLocIdx = 120; s.pc = 44; return s.tmp_2;
   case 44:
     r0 = s.retval;
@@ -2439,7 +2439,7 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 15; continue; }
-    s.tmp_2 = Items__P30561_mk(s);
+    s.tmp_2 = Items__P30948_mk(s);
     s.callLocIdx = 122; s.pc = 46; return s.tmp_2;
   case 46:
     r0 = s.retval;
@@ -2466,7 +2466,7 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 20; continue; }
-    s.tmp_2 = Food_func__P30524_mk(s);
+    s.tmp_2 = Food_func__P30911_mk(s);
     s.callLocIdx = 125; s.pc = 49; return s.tmp_2;
   case 49:
     r0 = s.retval;
@@ -2480,7 +2480,7 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 21; continue; }
-    s.tmp_2 = Water__P30673_mk(s);
+    s.tmp_2 = Water__P31060_mk(s);
     s.callLocIdx = 127; s.pc = 51; return s.tmp_2;
   case 51:
     r0 = s.retval;
@@ -2491,13 +2491,13 @@ switch (step) {
     { step = 26; continue; }
   case 25:
     s.tmp_0 = miniMenu_MenuSprite_close__P4501_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___30529;
+    s.tmp_0.arg0 = globals.myMenu___30916;
     s.callLocIdx = 128; s.pc = 52; return s.tmp_0;
   case 52:
     r0 = s.retval;
-    globals.Menuopen___30526 = (false);
+    globals.Menuopen___30913 = (false);
     s.tmp_0 = controller_moveSprite__P2181_mk(s);
-    s.tmp_0.arg0 = globals.mySprite___30544;
+    s.tmp_0.arg0 = globals.mySprite___30931;
     s.tmp_0.arg1 = 100;
     s.tmp_0.arg2 = 100;
     s.callLocIdx = 129; s.pc = 53; return s.tmp_0;
@@ -2508,12 +2508,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P30641.info = {"start":7640,"length":1840,"line":156,"column":55,"endLine":198,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P31028.info = {"start":7640,"length":1840,"line":156,"column":55,"endLine":198,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P30641_mk(s) {
+function inline__P31028_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P30641, depth: s.depth + 1,
+        parent: s, fn: inline__P31028, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -10503,7 +10503,7 @@ function Sprite_kind__P2422_mk(s) {
 
 
 
-function Items__P30561(s) {
+function Items__P30948(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -10513,36 +10513,36 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    globals.Menuopen___30526 = (true);
+    globals.Menuopen___30913 = (true);
     s.tmp_0 = miniMenu_createMenuFromArray__P4524_mk(s);
-    s.tmp_0.arg0 = globals.Item_menu___30566;
+    s.tmp_0.arg0 = globals.Item_menu___30953;
     s.callLocIdx = 84; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
-    globals.myMenu___30529 = (r0);
+    globals.myMenu___30916 = (r0);
     s.tmp_0 = miniMenu_MenuSprite_setTitle__P4506_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___30529;
+    s.tmp_0.arg0 = globals.myMenu___30916;
     s.tmp_0.arg1 = "Backpack";
     s.callLocIdx = 85; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
     s.tmp_0 = miniMenu_MenuSprite_setFrame__P4508_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___30529;
-    r0 = pxsim.image.ofBuffer(_hex30572);
+    s.tmp_0.arg0 = globals.myMenu___30916;
+    r0 = pxsim.image.ofBuffer(_hex30959);
     s.tmp_0.arg1 = r0;
     s.callLocIdx = 86; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
     s.tmp_0 = Sprite_setPosition__P2424_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___30529;
+    s.tmp_0.arg0 = globals.myMenu___30916;
     s.tmp_1 = Sprite_x__P2368_mk(s);
-    s.tmp_1.arg0 = globals.mySprite___30544;
+    s.tmp_1.arg0 = globals.mySprite___30931;
     s.callLocIdx = 87; s.pc = 5; return s.tmp_1;
   case 5:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
     s.tmp_2 = Sprite_y__P2370_mk(s);
-    s.tmp_2.arg0 = globals.mySprite___30544;
+    s.tmp_2.arg0 = globals.mySprite___30931;
     s.callLocIdx = 88; s.pc = 6; return s.tmp_2;
   case 6:
     r0 = s.retval;
@@ -10551,9 +10551,9 @@ switch (step) {
   case 4:
     r0 = s.retval;
     s.tmp_0 = miniMenu_MenuSprite_onButtonPressed__P4502_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___30529;
+    s.tmp_0.arg0 = globals.myMenu___30916;
     s.tmp_0.arg1 = globals.A___2127;
-    s.tmp_0.arg2 = Items_inline__P30582;
+    s.tmp_0.arg2 = Items_inline__P30969;
     s.callLocIdx = 91; s.pc = 7; return s.tmp_0;
   case 7:
     r0 = s.retval;
@@ -10561,24 +10561,24 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Items__P30561.info = {"start":3159,"length":3129,"line":63,"column":0,"endLine":122,"endColumn":1,"fileName":"main.ts","functionName":"Items","argumentNames":[]}
+Items__P30948.info = {"start":3159,"length":3129,"line":63,"column":0,"endLine":122,"endColumn":1,"fileName":"main.ts","functionName":"Items","argumentNames":[]}
 
-function Items__P30561_mk(s) {
+function Items__P30948_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Items__P30561, depth: s.depth + 1,
+        parent: s, fn: Items__P30948, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
 } }
 
-const _hex30572 = pxsim.BufferMethods.createBufferFromHex("87043000300000001111111111111111111111111111111111111111dddddd0011111111111111111111111111111111d1dddddddddddd0d1111111111ff11111111ffff11f1ff1fddfdfd5dfdfddddd11f1ff1ff1ff1fff1ff1ffff1fffffffdfdddddddddddddd11fffffff1ffffffffffffffffffffffffffffffffffdddd11ffffffffffffffffffffffffffffffffffffffdfdddddd11ffffffffffffffffffffffffffffffffffdfdddddddddd11ffffffffffffffffffffffffffffffffffdddfdfdfdddd11f1ffffffffffffffffffffffffffffffffddddddd5dddd11f1ffffffffffffffffffffffffffffffffddd5dfd5dddd1111ffffffffffffffffffffffffffffffffdfdddddddddd11f1ffffffffffffffffffffffffffffffffffffdfdddddd11ffffffffffffffffffffffffffffffffffffffdfdddddd11ffffffffffffffffffffffffffffffffdf5fdfdddddddd11f1ffffffffffffffffffffffffffffffdfdddddfd5dddd1111ffffffffffffffffffffffffffffffdf55dfdfd5dddd11f1ffffffffffffffffffffffffffffffdfdddddfd5dddd11ffffffffffffffffffffffffffffffffffddffdddddddd11ffffffffffffffffffffffffffffffffffffffffdddddd11ffffffffffffffffffffffffffffffffffffdddddddddd11ffffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffffffffdddddd1111ffffffffffffffffffffffffffffffffffffffdddddd11f1ffffffffffffffffffffffffffffffffffdddddddfdd11ffffffffffffffffffffffffffffffffffffddfddddddd11ffffffffffffffffffffffffffffffffffffddddd55ddd11ffffffffffffffffffffffffffffffffffffdddfdddddd11ffffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffffffdfdddddd1111ffffffffffffffffffffffffffffffdfdddddddddddd1111ffffffffffffffffffffffffffffffdf55d5dfdfdddd11f1ffffffffffffffffffffffffffffffffdfdfd5dfdddd11f1ffffffffffffffffffffffffffffffffdfdfdfdfdddd11f1ffffffffffffffffffffffffffffffffdfdddddddddd1111ffffffffffffffffffffffffffffffffffdfdddddddd11f1ffffffffffffffffffffffffffffffffffdfdddddddd11ffffffffffffffffffffffffffffffffffdddddddddddd11ffffffffffffffffffffffffffffffddddfdddfddd5ddd11f1ffffffffffffffffffffffffffffddddddfddd5ddddd1111f1ffffffffffffffffffffffffffffdfdddddddddddd1111ffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffff5d5d5d5ddd11f1ffffffffffffffffffffffffffffffdddd5d5d5d5ddd11f1fffffff1ff1ffffffff1ffff1ff1ffdddd5d5d5d5ddd1111ffff1111ff11f1ff1f11ffff1111ffdfdddddddddddd11111111111111111111111111111111111111d1dddddd0d11111111111111111111111111111111111111d1dddddd00")
+const _hex30959 = pxsim.BufferMethods.createBufferFromHex("87043000300000001111111111111111111111111111111111111111dddddd0011111111111111111111111111111111d1dddddddddddd0d1111111111ff11111111ffff11f1ff1fddfdfd5dfdfddddd11f1ff1ff1ff1fff1ff1ffff1fffffffdfdddddddddddddd11fffffff1ffffffffffffffffffffffffffffffffffdddd11ffffffffffffffffffffffffffffffffffffffdfdddddd11ffffffffffffffffffffffffffffffffffdfdddddddddd11ffffffffffffffffffffffffffffffffffdddfdfdfdddd11f1ffffffffffffffffffffffffffffffffddddddd5dddd11f1ffffffffffffffffffffffffffffffffddd5dfd5dddd1111ffffffffffffffffffffffffffffffffdfdddddddddd11f1ffffffffffffffffffffffffffffffffffffdfdddddd11ffffffffffffffffffffffffffffffffffffffdfdddddd11ffffffffffffffffffffffffffffffffdf5fdfdddddddd11f1ffffffffffffffffffffffffffffffdfdddddfd5dddd1111ffffffffffffffffffffffffffffffdf55dfdfd5dddd11f1ffffffffffffffffffffffffffffffdfdddddfd5dddd11ffffffffffffffffffffffffffffffffffddffdddddddd11ffffffffffffffffffffffffffffffffffffffffdddddd11ffffffffffffffffffffffffffffffffffffdddddddddd11ffffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffffffffdddddd1111ffffffffffffffffffffffffffffffffffffffdddddd11f1ffffffffffffffffffffffffffffffffffdddddddfdd11ffffffffffffffffffffffffffffffffffffddfddddddd11ffffffffffffffffffffffffffffffffffffddddd55ddd11ffffffffffffffffffffffffffffffffffffdddfdddddd11ffffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffffffdfdddddd1111ffffffffffffffffffffffffffffffdfdddddddddddd1111ffffffffffffffffffffffffffffffdf55d5dfdfdddd11f1ffffffffffffffffffffffffffffffffdfdfd5dfdddd11f1ffffffffffffffffffffffffffffffffdfdfdfdfdddd11f1ffffffffffffffffffffffffffffffffdfdddddddddd1111ffffffffffffffffffffffffffffffffffdfdddddddd11f1ffffffffffffffffffffffffffffffffffdfdddddddd11ffffffffffffffffffffffffffffffffffdddddddddddd11ffffffffffffffffffffffffffffffddddfdddfddd5ddd11f1ffffffffffffffffffffffffffffddddddfddd5ddddd1111f1ffffffffffffffffffffffffffffdfdddddddddddd1111ffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffff5d5d5d5ddd11f1ffffffffffffffffffffffffffffffdddd5d5d5d5ddd11f1fffffff1ff1ffffffff1ffff1ff1ffdddd5d5d5d5ddd1111ffff1111ff11f1ff1f11ffff1111ffdfdddddddddddd11111111111111111111111111111111111111d1dddddd0d11111111111111111111111111111111111111d1dddddd00")
 
 
 
 
-function Items_inline__P30582(s) {
+function Items_inline__P30969(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -10593,9 +10593,9 @@ switch (step) {
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
-    r0 = pxsim_Array_.removeAt(globals.Item_menu___30566, s.arg1);
+    r0 = pxsim_Array_.removeAt(globals.Item_menu___30953, s.arg1);
     s.tmp_0 = miniMenu_MenuSprite_moveSelection__P4500_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___30529;
+    s.tmp_0.arg0 = globals.myMenu___30916;
     s.tmp_0.arg1 = 0;
     s.callLocIdx = 90; s.pc = 1; return s.tmp_0;
   case 1:
@@ -10604,12 +10604,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Items_inline__P30582.info = {"start":6144,"length":141,"line":118,"column":41,"endLine":121,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":["selection","selectedIndex"]}
+Items_inline__P30969.info = {"start":6144,"length":141,"line":118,"column":41,"endLine":121,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":["selection","selectedIndex"]}
 
-function Items_inline__P30582_mk(s) {
+function Items_inline__P30969_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Items_inline__P30582, depth: s.depth + 1,
+        parent: s, fn: Items_inline__P30969, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -17722,7 +17722,7 @@ function Sprite_left__P2415_mk(s) {
 
 
 
-function Water__P30673(s) {
+function Water__P31060(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -17732,36 +17732,36 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    globals.Menuopen___30526 = (true);
+    globals.Menuopen___30913 = (true);
     s.tmp_0 = miniMenu_createMenuFromArray__P4524_mk(s);
-    s.tmp_0.arg0 = globals.Water_Supply_menu___30692;
+    s.tmp_0.arg0 = globals.Water_Supply_menu___31079;
     s.callLocIdx = 131; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
-    globals.myMenu___30529 = (r0);
+    globals.myMenu___30916 = (r0);
     s.tmp_0 = miniMenu_MenuSprite_setTitle__P4506_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___30529;
+    s.tmp_0.arg0 = globals.myMenu___30916;
     s.tmp_0.arg1 = "Backpack";
     s.callLocIdx = 132; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
     s.tmp_0 = miniMenu_MenuSprite_setFrame__P4508_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___30529;
-    r0 = pxsim.image.ofBuffer(_hex30698);
+    s.tmp_0.arg0 = globals.myMenu___30916;
+    r0 = pxsim.image.ofBuffer(_hex31085);
     s.tmp_0.arg1 = r0;
     s.callLocIdx = 133; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
     s.tmp_0 = Sprite_setPosition__P2424_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___30529;
+    s.tmp_0.arg0 = globals.myMenu___30916;
     s.tmp_1 = Sprite_x__P2368_mk(s);
-    s.tmp_1.arg0 = globals.mySprite___30544;
+    s.tmp_1.arg0 = globals.mySprite___30931;
     s.callLocIdx = 134; s.pc = 5; return s.tmp_1;
   case 5:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
     s.tmp_2 = Sprite_y__P2370_mk(s);
-    s.tmp_2.arg0 = globals.mySprite___30544;
+    s.tmp_2.arg0 = globals.mySprite___30931;
     s.callLocIdx = 135; s.pc = 6; return s.tmp_2;
   case 6:
     r0 = s.retval;
@@ -17770,9 +17770,9 @@ switch (step) {
   case 4:
     r0 = s.retval;
     s.tmp_0 = miniMenu_MenuSprite_onButtonPressed__P4502_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___30529;
+    s.tmp_0.arg0 = globals.myMenu___30916;
     s.tmp_0.arg1 = globals.A___2127;
-    s.tmp_0.arg2 = Water_inline__P30708;
+    s.tmp_0.arg2 = Water_inline__P31095;
     s.callLocIdx = 138; s.pc = 7; return s.tmp_0;
   case 7:
     r0 = s.retval;
@@ -17780,24 +17780,24 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Water__P30673.info = {"start":9506,"length":3145,"line":202,"column":0,"endLine":261,"endColumn":1,"fileName":"main.ts","functionName":"Water","argumentNames":[]}
+Water__P31060.info = {"start":9506,"length":3145,"line":202,"column":0,"endLine":261,"endColumn":1,"fileName":"main.ts","functionName":"Water","argumentNames":[]}
 
-function Water__P30673_mk(s) {
+function Water__P31060_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Water__P30673, depth: s.depth + 1,
+        parent: s, fn: Water__P31060, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
 } }
 
-const _hex30698 = pxsim.BufferMethods.createBufferFromHex("87043000300000001111111111111111111111111111111111111111dddddd0011111111111111111111111111111111d1dddddddddddd0d1111111111ff11111111ffff11f1ff1fddfdfd5dfdfddddd11f1ff1ff1ff1fff1ff1ffff1fffffffdfdddddddddddddd11fffffff1ffffffffffffffffffffffffffffffffffdddd11ffffffffffffffffffffffffffffffffffffffdfdddddd11ffffffffffffffffffffffffffffffffffdfdddddddddd11ffffffffffffffffffffffffffffffffffdddfdfdfdddd11f1ffffffffffffffffffffffffffffffffddddddd5dddd11f1ffffffffffffffffffffffffffffffffddd5dfd5dddd1111ffffffffffffffffffffffffffffffffdfdddddddddd11f1ffffffffffffffffffffffffffffffffffffdfdddddd11ffffffffffffffffffffffffffffffffffffffdfdddddd11ffffffffffffffffffffffffffffffffdf5fdfdddddddd11f1ffffffffffffffffffffffffffffffdfdddddfd5dddd1111ffffffffffffffffffffffffffffffdf55dfdfd5dddd11f1ffffffffffffffffffffffffffffffdfdddddfd5dddd11ffffffffffffffffffffffffffffffffffddffdddddddd11ffffffffffffffffffffffffffffffffffffffffdddddd11ffffffffffffffffffffffffffffffffffffdddddddddd11ffffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffffffffdddddd1111ffffffffffffffffffffffffffffffffffffffdddddd11f1ffffffffffffffffffffffffffffffffffdddddddfdd11ffffffffffffffffffffffffffffffffffffddfddddddd11ffffffffffffffffffffffffffffffffffffddddd55ddd11ffffffffffffffffffffffffffffffffffffdddfdddddd11ffffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffffffdfdddddd1111ffffffffffffffffffffffffffffffdfdddddddddddd1111ffffffffffffffffffffffffffffffdf55d5dfdfdddd11f1ffffffffffffffffffffffffffffffffdfdfd5dfdddd11f1ffffffffffffffffffffffffffffffffdfdfdfdfdddd11f1ffffffffffffffffffffffffffffffffdfdddddddddd1111ffffffffffffffffffffffffffffffffffdfdddddddd11f1ffffffffffffffffffffffffffffffffffdfdddddddd11ffffffffffffffffffffffffffffffffffdddddddddddd11ffffffffffffffffffffffffffffffddddfdddfddd5ddd11f1ffffffffffffffffffffffffffffddddddfddd5ddddd1111f1ffffffffffffffffffffffffffffdfdddddddddddd1111ffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffff5d5d5d5ddd11f1ffffffffffffffffffffffffffffffdddd5d5d5d5ddd11f1fffffff1ff1ffffffff1ffff1ff1ffdddd5d5d5d5ddd1111ffff1111ff11f1ff1f11ffff1111ffdfdddddddddddd11111111111111111111111111111111111111d1dddddd0d11111111111111111111111111111111111111d1dddddd00")
+const _hex31085 = pxsim.BufferMethods.createBufferFromHex("87043000300000001111111111111111111111111111111111111111dddddd0011111111111111111111111111111111d1dddddddddddd0d1111111111ff11111111ffff11f1ff1fddfdfd5dfdfddddd11f1ff1ff1ff1fff1ff1ffff1fffffffdfdddddddddddddd11fffffff1ffffffffffffffffffffffffffffffffffdddd11ffffffffffffffffffffffffffffffffffffffdfdddddd11ffffffffffffffffffffffffffffffffffdfdddddddddd11ffffffffffffffffffffffffffffffffffdddfdfdfdddd11f1ffffffffffffffffffffffffffffffffddddddd5dddd11f1ffffffffffffffffffffffffffffffffddd5dfd5dddd1111ffffffffffffffffffffffffffffffffdfdddddddddd11f1ffffffffffffffffffffffffffffffffffffdfdddddd11ffffffffffffffffffffffffffffffffffffffdfdddddd11ffffffffffffffffffffffffffffffffdf5fdfdddddddd11f1ffffffffffffffffffffffffffffffdfdddddfd5dddd1111ffffffffffffffffffffffffffffffdf55dfdfd5dddd11f1ffffffffffffffffffffffffffffffdfdddddfd5dddd11ffffffffffffffffffffffffffffffffffddffdddddddd11ffffffffffffffffffffffffffffffffffffffffdddddd11ffffffffffffffffffffffffffffffffffffdddddddddd11ffffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffffffffdddddd1111ffffffffffffffffffffffffffffffffffffffdddddd11f1ffffffffffffffffffffffffffffffffffdddddddfdd11ffffffffffffffffffffffffffffffffffffddfddddddd11ffffffffffffffffffffffffffffffffffffddddd55ddd11ffffffffffffffffffffffffffffffffffffdddfdddddd11ffffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffffffdfdddddd1111ffffffffffffffffffffffffffffffdfdddddddddddd1111ffffffffffffffffffffffffffffffdf55d5dfdfdddd11f1ffffffffffffffffffffffffffffffffdfdfd5dfdddd11f1ffffffffffffffffffffffffffffffffdfdfdfdfdddd11f1ffffffffffffffffffffffffffffffffdfdddddddddd1111ffffffffffffffffffffffffffffffffffdfdddddddd11f1ffffffffffffffffffffffffffffffffffdfdddddddd11ffffffffffffffffffffffffffffffffffdddddddddddd11ffffffffffffffffffffffffffffffddddfdddfddd5ddd11f1ffffffffffffffffffffffffffffddddddfddd5ddddd1111f1ffffffffffffffffffffffffffffdfdddddddddddd1111ffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffff5d5d5d5ddd11f1ffffffffffffffffffffffffffffffdddd5d5d5d5ddd11f1fffffff1ff1ffffffff1ffff1ff1ffdddd5d5d5d5ddd1111ffff1111ff11f1ff1f11ffff1111ffdfdddddddddddd11111111111111111111111111111111111111d1dddddd0d11111111111111111111111111111111111111d1dddddd00")
 
 
 
 
-function Water_inline__P30708(s) {
+function Water_inline__P31095(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -17812,9 +17812,9 @@ switch (step) {
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
-    r0 = pxsim_Array_.removeAt(globals.Water_Supply_menu___30692, s.arg1);
+    r0 = pxsim_Array_.removeAt(globals.Water_Supply_menu___31079, s.arg1);
     s.tmp_0 = miniMenu_MenuSprite_moveSelection__P4500_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___30529;
+    s.tmp_0.arg0 = globals.myMenu___30916;
     s.tmp_0.arg1 = 0;
     s.callLocIdx = 137; s.pc = 1; return s.tmp_0;
   case 1:
@@ -17823,12 +17823,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Water_inline__P30708.info = {"start":12499,"length":149,"line":257,"column":41,"endLine":260,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":["selection","selectedIndex"]}
+Water_inline__P31095.info = {"start":12499,"length":149,"line":257,"column":41,"endLine":260,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":["selection","selectedIndex"]}
 
-function Water_inline__P30708_mk(s) {
+function Water_inline__P31095_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Water_inline__P30708, depth: s.depth + 1,
+        parent: s, fn: Water_inline__P31095, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -17839,7 +17839,7 @@ function Water_inline__P30708_mk(s) {
 
 
 
-function Food_func__P30524(s) {
+function Food_func__P30911(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -17849,36 +17849,36 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    globals.Menuopen___30526 = (true);
+    globals.Menuopen___30913 = (true);
     s.tmp_0 = miniMenu_createMenuFromArray__P4524_mk(s);
-    s.tmp_0.arg0 = globals.Food_menu___30533;
+    s.tmp_0.arg0 = globals.Food_menu___30920;
     s.callLocIdx = 76; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
-    globals.myMenu___30529 = (r0);
+    globals.myMenu___30916 = (r0);
     s.tmp_0 = miniMenu_MenuSprite_setTitle__P4506_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___30529;
+    s.tmp_0.arg0 = globals.myMenu___30916;
     s.tmp_0.arg1 = "Backpack";
     s.callLocIdx = 77; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
     s.tmp_0 = miniMenu_MenuSprite_setFrame__P4508_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___30529;
-    r0 = pxsim.image.ofBuffer(_hex30539);
+    s.tmp_0.arg0 = globals.myMenu___30916;
+    r0 = pxsim.image.ofBuffer(_hex30926);
     s.tmp_0.arg1 = r0;
     s.callLocIdx = 78; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
     s.tmp_0 = Sprite_setPosition__P2424_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___30529;
+    s.tmp_0.arg0 = globals.myMenu___30916;
     s.tmp_1 = Sprite_x__P2368_mk(s);
-    s.tmp_1.arg0 = globals.mySprite___30544;
+    s.tmp_1.arg0 = globals.mySprite___30931;
     s.callLocIdx = 79; s.pc = 5; return s.tmp_1;
   case 5:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
     s.tmp_2 = Sprite_y__P2370_mk(s);
-    s.tmp_2.arg0 = globals.mySprite___30544;
+    s.tmp_2.arg0 = globals.mySprite___30931;
     s.callLocIdx = 80; s.pc = 6; return s.tmp_2;
   case 6:
     r0 = s.retval;
@@ -17887,9 +17887,9 @@ switch (step) {
   case 4:
     r0 = s.retval;
     s.tmp_0 = miniMenu_MenuSprite_onButtonPressed__P4502_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___30529;
+    s.tmp_0.arg0 = globals.myMenu___30916;
     s.tmp_0.arg1 = globals.A___2127;
-    s.tmp_0.arg2 = Food_func_inline__P30551;
+    s.tmp_0.arg2 = Food_func_inline__P30938;
     s.callLocIdx = 83; s.pc = 7; return s.tmp_0;
   case 7:
     r0 = s.retval;
@@ -17897,24 +17897,24 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Food_func__P30524.info = {"start":25,"length":3133,"line":3,"column":0,"endLine":62,"endColumn":1,"fileName":"main.ts","functionName":"Food_func","argumentNames":[]}
+Food_func__P30911.info = {"start":25,"length":3133,"line":3,"column":0,"endLine":62,"endColumn":1,"fileName":"main.ts","functionName":"Food_func","argumentNames":[]}
 
-function Food_func__P30524_mk(s) {
+function Food_func__P30911_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Food_func__P30524, depth: s.depth + 1,
+        parent: s, fn: Food_func__P30911, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
 } }
 
-const _hex30539 = pxsim.BufferMethods.createBufferFromHex("87043000300000001111111111111111111111111111111111111111dddddd0011111111111111111111111111111111d1dddddddddddd0d1111111111ff11111111ffff11f1ff1fddfdfd5dfdfddddd11f1ff1ff1ff1fff1ff1ffff1fffffffdfdddddddddddddd11fffffff1ffffffffffffffffffffffffffffffffffdddd11ffffffffffffffffffffffffffffffffffffffdfdddddd11ffffffffffffffffffffffffffffffffffdfdddddddddd11ffffffffffffffffffffffffffffffffffdddfdfdfdddd11f1ffffffffffffffffffffffffffffffffddddddd5dddd11f1ffffffffffffffffffffffffffffffffddd5dfd5dddd1111ffffffffffffffffffffffffffffffffdfdddddddddd11f1ffffffffffffffffffffffffffffffffffffdfdddddd11ffffffffffffffffffffffffffffffffffffffdfdddddd11ffffffffffffffffffffffffffffffffdf5fdfdddddddd11f1ffffffffffffffffffffffffffffffdfdddddfd5dddd1111ffffffffffffffffffffffffffffffdf55dfdfd5dddd11f1ffffffffffffffffffffffffffffffdfdddddfd5dddd11ffffffffffffffffffffffffffffffffffddffdddddddd11ffffffffffffffffffffffffffffffffffffffffdddddd11ffffffffffffffffffffffffffffffffffffdddddddddd11ffffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffffffffdddddd1111ffffffffffffffffffffffffffffffffffffffdddddd11f1ffffffffffffffffffffffffffffffffffdddddddfdd11ffffffffffffffffffffffffffffffffffffddfddddddd11ffffffffffffffffffffffffffffffffffffddddd55ddd11ffffffffffffffffffffffffffffffffffffdddfdddddd11ffffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffffffdfdddddd1111ffffffffffffffffffffffffffffffdfdddddddddddd1111ffffffffffffffffffffffffffffffdf55d5dfdfdddd11f1ffffffffffffffffffffffffffffffffdfdfd5dfdddd11f1ffffffffffffffffffffffffffffffffdfdfdfdfdddd11f1ffffffffffffffffffffffffffffffffdfdddddddddd1111ffffffffffffffffffffffffffffffffffdfdddddddd11f1ffffffffffffffffffffffffffffffffffdfdddddddd11ffffffffffffffffffffffffffffffffffdddddddddddd11ffffffffffffffffffffffffffffffddddfdddfddd5ddd11f1ffffffffffffffffffffffffffffddddddfddd5ddddd1111f1ffffffffffffffffffffffffffffdfdddddddddddd1111ffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffff5d5d5d5ddd11f1ffffffffffffffffffffffffffffffdddd5d5d5d5ddd11f1fffffff1ff1ffffffff1ffff1ff1ffdddd5d5d5d5ddd1111ffff1111ff11f1ff1f11ffff1111ffdfdddddddddddd11111111111111111111111111111111111111d1dddddd0d11111111111111111111111111111111111111d1dddddd00")
+const _hex30926 = pxsim.BufferMethods.createBufferFromHex("87043000300000001111111111111111111111111111111111111111dddddd0011111111111111111111111111111111d1dddddddddddd0d1111111111ff11111111ffff11f1ff1fddfdfd5dfdfddddd11f1ff1ff1ff1fff1ff1ffff1fffffffdfdddddddddddddd11fffffff1ffffffffffffffffffffffffffffffffffdddd11ffffffffffffffffffffffffffffffffffffffdfdddddd11ffffffffffffffffffffffffffffffffffdfdddddddddd11ffffffffffffffffffffffffffffffffffdddfdfdfdddd11f1ffffffffffffffffffffffffffffffffddddddd5dddd11f1ffffffffffffffffffffffffffffffffddd5dfd5dddd1111ffffffffffffffffffffffffffffffffdfdddddddddd11f1ffffffffffffffffffffffffffffffffffffdfdddddd11ffffffffffffffffffffffffffffffffffffffdfdddddd11ffffffffffffffffffffffffffffffffdf5fdfdddddddd11f1ffffffffffffffffffffffffffffffdfdddddfd5dddd1111ffffffffffffffffffffffffffffffdf55dfdfd5dddd11f1ffffffffffffffffffffffffffffffdfdddddfd5dddd11ffffffffffffffffffffffffffffffffffddffdddddddd11ffffffffffffffffffffffffffffffffffffffffdddddd11ffffffffffffffffffffffffffffffffffffdddddddddd11ffffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffffffffdddddd1111ffffffffffffffffffffffffffffffffffffffdddddd11f1ffffffffffffffffffffffffffffffffffdddddddfdd11ffffffffffffffffffffffffffffffffffffddfddddddd11ffffffffffffffffffffffffffffffffffffddddd55ddd11ffffffffffffffffffffffffffffffffffffdddfdddddd11ffffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffffffdfdddddd1111ffffffffffffffffffffffffffffffdfdddddddddddd1111ffffffffffffffffffffffffffffffdf55d5dfdfdddd11f1ffffffffffffffffffffffffffffffffdfdfd5dfdddd11f1ffffffffffffffffffffffffffffffffdfdfdfdfdddd11f1ffffffffffffffffffffffffffffffffdfdddddddddd1111ffffffffffffffffffffffffffffffffffdfdddddddd11f1ffffffffffffffffffffffffffffffffffdfdddddddd11ffffffffffffffffffffffffffffffffffdddddddddddd11ffffffffffffffffffffffffffffffddddfdddfddd5ddd11f1ffffffffffffffffffffffffffffddddddfddd5ddddd1111f1ffffffffffffffffffffffffffffdfdddddddddddd1111ffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffffdddddddddd11f1ffffffffffffffffffffffffffffffffff5d5d5d5ddd11f1ffffffffffffffffffffffffffffffdddd5d5d5d5ddd11f1fffffff1ff1ffffffff1ffff1ff1ffdddd5d5d5d5ddd1111ffff1111ff11f1ff1f11ffff1111ffdfdddddddddddd11111111111111111111111111111111111111d1dddddd0d11111111111111111111111111111111111111d1dddddd00")
 
 
 
 
-function Food_func_inline__P30551(s) {
+function Food_func_inline__P30938(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -17929,9 +17929,9 @@ switch (step) {
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
-    r0 = pxsim_Array_.removeAt(globals.Food_menu___30533, s.arg1);
+    r0 = pxsim_Array_.removeAt(globals.Food_menu___30920, s.arg1);
     s.tmp_0 = miniMenu_MenuSprite_moveSelection__P4500_mk(s);
-    s.tmp_0.arg0 = globals.myMenu___30529;
+    s.tmp_0.arg0 = globals.myMenu___30916;
     s.tmp_0.arg1 = 0;
     s.callLocIdx = 82; s.pc = 1; return s.tmp_0;
   case 1:
@@ -17940,12 +17940,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Food_func_inline__P30551.info = {"start":3014,"length":141,"line":58,"column":41,"endLine":61,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":["selection","selectedIndex"]}
+Food_func_inline__P30938.info = {"start":3014,"length":141,"line":58,"column":41,"endLine":61,"endColumn":5,"fileName":"main.ts","functionName":"inline","argumentNames":["selection","selectedIndex"]}
 
-function Food_func_inline__P30551_mk(s) {
+function Food_func_inline__P30938_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Food_func_inline__P30551, depth: s.depth + 1,
+        parent: s, fn: Food_func_inline__P30938, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -17956,7 +17956,7 @@ function Food_func_inline__P30551_mk(s) {
 
 
 
-function Armour__P30637(s) {
+function Armour__P31024(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -17970,12 +17970,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Armour__P30637.info = {"start":7560,"length":24,"line":153,"column":0,"endLine":155,"endColumn":1,"fileName":"main.ts","functionName":"Armour","argumentNames":[]}
+Armour__P31024.info = {"start":7560,"length":24,"line":153,"column":0,"endLine":155,"endColumn":1,"fileName":"main.ts","functionName":"Armour","argumentNames":[]}
 
-function Armour__P30637_mk(s) {
+function Armour__P31024_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Armour__P30637, depth: s.depth + 1,
+        parent: s, fn: Armour__P31024, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
 } }
 
@@ -17983,7 +17983,7 @@ function Armour__P30637_mk(s) {
 
 
 
-function Ranged__P30523(s) {
+function Ranged__P30910(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -17997,12 +17997,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Ranged__P30523.info = {"start":0,"length":24,"line":0,"column":0,"endLine":2,"endColumn":1,"fileName":"main.ts","functionName":"Ranged","argumentNames":[]}
+Ranged__P30910.info = {"start":0,"length":24,"line":0,"column":0,"endLine":2,"endColumn":1,"fileName":"main.ts","functionName":"Ranged","argumentNames":[]}
 
-function Ranged__P30523_mk(s) {
+function Ranged__P30910_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Ranged__P30523, depth: s.depth + 1,
+        parent: s, fn: Ranged__P30910, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
 } }
 
@@ -18010,7 +18010,7 @@ function Ranged__P30523_mk(s) {
 
 
 
-function Melee__P30660(s) {
+function Melee__P31047(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -18024,12 +18024,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-Melee__P30660.info = {"start":9482,"length":23,"line":199,"column":0,"endLine":201,"endColumn":1,"fileName":"main.ts","functionName":"Melee","argumentNames":[]}
+Melee__P31047.info = {"start":9482,"length":23,"line":199,"column":0,"endLine":201,"endColumn":1,"fileName":"main.ts","functionName":"Melee","argumentNames":[]}
 
-function Melee__P30660_mk(s) {
+function Melee__P31047_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: Melee__P30660, depth: s.depth + 1,
+        parent: s, fn: Melee__P31047, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
 } }
 
@@ -70729,7 +70729,7 @@ const sprites_BaseSpriteSayRenderer__C2273_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["transparency16___4739","tile3___4742","tile4___4743","tile7___4746","tile1___4740","tile2___4741","tile5___4744","tile6___4745","Item_menu___30566","Waepons___30628","myMenu2___30631","Menuopen___30526","mySprite___30544","myMenu___30529","Food_menu___30533","Water_Supply_menu___30692"])
+const breakpoints = setupDebugger(1, ["transparency16___4739","tile3___4742","tile4___4743","tile7___4746","tile1___4740","tile2___4741","tile5___4744","tile6___4745","Item_menu___30953","Waepons___31015","myMenu2___31018","Menuopen___30913","mySprite___30931","myMenu___30916","Food_menu___30920","Water_Supply_menu___31079"])
 
-return _main___P30791
+return _main___P31224
 })
