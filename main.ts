@@ -124,47 +124,47 @@ function Items () {
     })
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile3`, function (sprite, location) {
-    if (location.column == 6 && location.row == 2) {
-        Item_menu = [miniMenu.createMenuItem("Key", img`
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . 5 5 5 5 5 . . . 
-            . . . . . . . 5 4 4 4 4 4 5 . . 
-            . 5 5 5 5 5 5 5 . . . . . 5 . . 
-            . 5 . 5 . . . 5 . . . . . 5 . . 
-            . 5 . 5 . . . 5 . . . . . 5 . . 
-            . 5 . . . . . 5 . . . . . 5 . . 
-            . . . . . . . . 5 5 5 5 5 . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            `)]
+    if (controller.A.isPressed()) {
+        if (location.column == 6 && location.row == 2) {
+            Item_menu = [miniMenu.createMenuItem("Key", img`
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . 5 5 5 5 5 . . . 
+                . . . . . . . 5 4 4 4 4 4 5 . . 
+                . 5 5 5 5 5 5 5 . . . . . 5 . . 
+                . 5 . 5 . . . 5 . . . . . 5 . . 
+                . 5 . 5 . . . 5 . . . . . 5 . . 
+                . 5 . . . . . 5 . . . . . 5 . . 
+                . . . . . . . . 5 5 5 5 5 . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                `)]
+        }
+        tiles.setTileAt(location, sprites.dungeon.darkGroundCenter)
     }
-    tiles.setTileAt(location, sprites.dungeon.darkGroundCenter)
-})
-scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sprite, location) {
-    if (location.column == 12 && location.row == 2) {
-        Waepons = true
-        myMenu2 = true
-    }
-    tiles.setTileAt(location, assets.tile`chestOpen`)
 })
 function Armour () {
 	
 }
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile5`, function (sprite, location) {
+    if (controller.A.isPressed()) {
+        if (location.column == 12 && location.row == 2) {
+            Waepons = true
+            story.printCharacterText("You remember where to find your weapons.", "You")
+            story.printCharacterText("You remember where to find your items.", "You")
+        }
+        tiles.setTileAt(location, assets.tile`myTile4`)
+    }
+})
 controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
     if (Menuopen == false) {
         controller.moveSprite(mySprite, 0, 0)
         if (Waepons == true) {
-            if (myMenu2 == true) {
-                story.printCharacterText("You remember where to find your weapons.", "You")
-                story.printCharacterText("You remember where to find your items.", "You")
-                myMenu2 = false
-            }
             story.showPlayerChoices("Essentials", "Weapons", "Items", "Cancel")
             if (story.checkLastAnswer("Weapons")) {
                 story.showPlayerChoices("Weapons: Melee", "Weapons: Ranged", "Weapons: Armour", "Cancel")
@@ -269,7 +269,6 @@ function Water () {
         myMenu.setPosition(scene.cameraProperty(CameraProperty.X), scene.cameraProperty(CameraProperty.Y))
     })
 }
-let myMenu2 = false
 let Item_menu: miniMenu.MenuItem[] = []
 let myMenu: miniMenu.MenuSprite = null
 let Menuopen = false
