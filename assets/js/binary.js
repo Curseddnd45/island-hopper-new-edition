@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v2.0.48/---simulator","cdnUrl":"https://cdn.makecode.com","version":"1.3.2","target":"arcade","targetVersion":"2.0.48","repo":"curseddnd45/island-hopper-new-edition"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v2.0.48/---simulator","cdnUrl":"https://cdn.makecode.com","version":"1.3.3","target":"arcade","targetVersion":"2.0.48","repo":"curseddnd45/island-hopper-new-edition"}
 // total=2516264 new=21.22% cached=74.33% other=4.46%
 (function (ectx) {
 'use strict';
@@ -608,7 +608,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P35899(s) {
+function _main___P36354(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1225,13 +1225,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P35899.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-mini-menu/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P35899.continuations = [  ]
+_main___P36354.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-mini-menu/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P36354.continuations = [  ]
 
-function _main___P35899_mk(s) {
+function _main___P36354_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P35899, depth: s.depth + 1,
+        parent: s, fn: _main___P36354, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -71020,5 +71020,5 @@ const sprites_BaseSpriteSayRenderer__C2273_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["transparency16___4739","tile3___4742","tile4___4743","tile7___4746","tile1___4740","tile2___4741","tile5___4744","tile6___4745","Item_menu___35921","Waepons___35943","myMenu2___35946","Menuopen___35959","mySprite___35963","myMenu___36008","Food_menu___36014","Water_Supply_menu___36013"])
 
-return _main___P35899
+return _main___P36354
 })
