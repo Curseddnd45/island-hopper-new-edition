@@ -55,10 +55,11 @@ function Food_func () {
         .dddddddddddddddddddddddddddddddddddddddddddddd.
         ..dddddddddddddddddddddddddddddddddddddddddddd..
         `)
-    myMenu.setPosition(mySprite.x, mySprite.y)
+    myMenu.setPosition(scene.cameraProperty(CameraProperty.X), scene.cameraProperty(CameraProperty.Y))
     myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
         Food_menu.removeAt(selectedIndex)
         myMenu.moveSelection(miniMenu.MoveDirection.Up)
+        myMenu.setPosition(scene.cameraProperty(CameraProperty.X), scene.cameraProperty(CameraProperty.Y))
     })
 }
 function Items () {
@@ -115,10 +116,11 @@ function Items () {
         .dddddddddddddddddddddddddddddddddddddddddddddd.
         ..dddddddddddddddddddddddddddddddddddddddddddd..
         `)
-    myMenu.setPosition(mySprite.x, mySprite.y)
+    myMenu.setPosition(scene.cameraProperty(CameraProperty.X), scene.cameraProperty(CameraProperty.Y))
     myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
         Item_menu.removeAt(selectedIndex)
         myMenu.moveSelection(miniMenu.MoveDirection.Up)
+        myMenu.setPosition(scene.cameraProperty(CameraProperty.X), scene.cameraProperty(CameraProperty.Y))
     })
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile3`, function (sprite, location) {
@@ -159,8 +161,8 @@ controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
         controller.moveSprite(mySprite, 0, 0)
         if (Waepons == true) {
             if (myMenu2 == true) {
-                story.printCharacterText("You remember where to find your weapons.", "???")
-                story.printCharacterText("You remember where to find your items.", "???")
+                story.printCharacterText("You remember where to find your weapons.", "You")
+                story.printCharacterText("You remember where to find your items.", "You")
                 myMenu2 = false
             }
             story.showPlayerChoices("Essentials", "Weapons", "Items", "Cancel")
@@ -172,6 +174,8 @@ controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
                     Ranged()
                 } else if (story.checkLastAnswer("Weapons: Armour")) {
                     Armour()
+                } else {
+                	
                 }
             } else if (story.checkLastAnswer("Essentials")) {
                 story.showPlayerChoices("Essentials: Food", "Essentials: Water Supply", "Cancel")
@@ -182,6 +186,8 @@ controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
                 }
             } else if (story.checkLastAnswer("Items")) {
                 Items()
+            } else {
+                controller.moveSprite(mySprite)
             }
         } else {
             story.showPlayerChoices("Essentials: Food", "Essentials: Water Supply", "Cancel")
@@ -189,6 +195,8 @@ controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
                 Food_func()
             } else if (story.checkLastAnswer("Essentials: Water Supply")) {
                 Water()
+            } else {
+                controller.moveSprite(mySprite)
             }
         }
     } else {
@@ -254,10 +262,11 @@ function Water () {
         .dddddddddddddddddddddddddddddddddddddddddddddd.
         ..dddddddddddddddddddddddddddddddddddddddddddd..
         `)
-    myMenu.setPosition(mySprite.x, mySprite.y)
+    myMenu.setPosition(scene.cameraProperty(CameraProperty.X), scene.cameraProperty(CameraProperty.Y))
     myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
         Water_Supply_menu.removeAt(selectedIndex)
         myMenu.moveSelection(miniMenu.MoveDirection.Up)
+        myMenu.setPosition(scene.cameraProperty(CameraProperty.X), scene.cameraProperty(CameraProperty.Y))
     })
 }
 let myMenu2 = false
