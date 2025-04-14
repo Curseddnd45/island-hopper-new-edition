@@ -274,6 +274,7 @@ let Water_Supply_menu: miniMenu.MenuItem[] = []
 let Food_menu: miniMenu.MenuItem[] = []
 let mySprite: Sprite = null
 let Waepons = false
+info.setLife(3)
 Waepons = false
 mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
