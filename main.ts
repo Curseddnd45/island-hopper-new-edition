@@ -155,8 +155,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile5`, function (sprite, l
     if (controller.A.isPressed()) {
         if (location.column == 12 && location.row == 2) {
             Waepons = true
-            story.printCharacterText("You remember where to find your weapons.", "You")
-            story.printCharacterText("You remember where to find your items.", "You")
         }
         tiles.setTileAt(location, assets.tile`myTile4`)
     }
