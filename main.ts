@@ -175,7 +175,7 @@ controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
                 } else if (story.checkLastAnswer("Weapons: Armour")) {
                     Armour()
                 } else {
-                	
+                    controller.moveSprite(mySprite)
                 }
             } else if (story.checkLastAnswer("Essentials")) {
                 story.showPlayerChoices("Essentials: Food", "Essentials: Water Supply", "Cancel")
