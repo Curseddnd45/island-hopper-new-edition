@@ -1,3 +1,6 @@
+namespace SpriteKind {
+    export const Cousin = SpriteKind.create()
+}
 function Ranged () {
 	
 }
@@ -125,7 +128,7 @@ function Items () {
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile3`, function (sprite, location) {
     if (controller.A.isPressed()) {
-        if (location.column == 6 && location.row == 2) {
+        if (location.column == 22 && location.row == 2) {
             Item_menu = [miniMenu.createMenuItem("Key", img`
                 . . . . . . . . . . . . . . . . 
                 . . . . . . . . . . . . . . . . 
@@ -148,12 +151,26 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile3`, function (sprite, l
         tiles.setTileAt(location, sprites.dungeon.darkGroundCenter)
     }
 })
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Cousin, function (sprite, otherSprite) {
+    if (Talk == true) {
+        Talk = false
+        story.setSoundEnabled(true)
+        story.printCharacterText("Ah! Happy Birthday, to my favourite (and only) cousin!", "Jacko Lanten (Cousin)")
+        story.printCharacterText("Here, weeks worth of rations for you to enjoy. I got your favourite: gravel flavour!", "Jacko Lanten (Cousin)")
+        for (let value of tiles.getTilesByType(assets.tile`myTile6`)) {
+            tiles.setTileAt(value, assets.tile`myTile7`)
+        }
+        story.printCharacterText("*Burp* What strength did you get for the rations?", "You")
+        story.printCharacterText("10/10! Your fav?", "Jacko Lanten (Cousin)")
+        story.printCharacterText("Errr…", "You")
+    }
+})
 function Armour () {
 	
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile5`, function (sprite, location) {
     if (controller.A.isPressed()) {
-        if (location.column == 12 && location.row == 2) {
+        if (location.column == 28 && location.row == 2) {
             Waepons = true
         }
         tiles.setTileAt(location, assets.tile`myTile4`)
@@ -274,25 +291,10 @@ let Water_Supply_menu: miniMenu.MenuItem[] = []
 let Food_menu: miniMenu.MenuItem[] = []
 let mySprite: Sprite = null
 let Waepons = false
+let Talk = false
+Talk = true
 Waepons = false
-mySprite = sprites.create(img`
-    . . . . . . . . . . . . . . . . 
-    . . . . 2 2 . . . . . 2 2 . . . 
-    . . . . 2 2 7 7 7 7 7 2 2 . . . 
-    . . . . 2 2 7 a 7 a 7 2 2 . . . 
-    . . . . . . 7 7 7 7 7 . . . . . 
-    . . . . . . 7 8 8 8 7 . . . . . 
-    . . . . 8 6 7 7 7 7 7 6 8 . . . 
-    . . . 8 8 6 6 6 6 6 6 6 8 8 . . 
-    . . 8 8 8 6 6 6 6 6 6 6 8 8 8 . 
-    . . 8 8 . 9 9 9 9 9 9 9 . 8 8 . 
-    . . . . . 9 9 9 9 9 9 9 . . . . 
-    . . . . . 9 9 9 9 9 9 9 . . . . 
-    . . . . . 4 4 . . 4 4 . . . . . 
-    . . . . . 4 4 . . 4 4 . . . . . 
-    . . . . . 4 4 . . 4 4 . . . . . 
-    . . . . . 4 4 . . 4 4 . . . . . 
-    `, SpriteKind.Player)
+mySprite = sprites.create(assets.image`myImage1`, SpriteKind.Player)
 tiles.setCurrentTilemap(tilemap`level1`)
 scene.cameraFollowSprite(mySprite)
 controller.moveSprite(mySprite)
@@ -368,3 +370,5 @@ Water_Supply_menu = [miniMenu.createMenuItem("Small Bottle of Water", img`
     . . . 1 1 5 5 1 1 1 1 1 1 . . . 
     `)]
 Menuopen = false
+let Jacko_Lanten = sprites.create(assets.image`myImage0`, SpriteKind.Cousin)
+tiles.placeOnTile(Jacko_Lanten, tiles.getTileLocation(10, 4))
