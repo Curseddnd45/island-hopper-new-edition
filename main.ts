@@ -166,6 +166,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Cousin, function (sprite, otherS
         story.printCharacterText("Um, sure!", "You")
         story.printCharacterText("Bye!", "You")
         story.spriteMoveToLocation(otherSprite, 0, 0, 25)
+        sprites.destroy(otherSprite)
         story.printCharacterText("*Tuh*", "You")
     }
 })
