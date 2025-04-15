@@ -154,6 +154,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile3`, function (sprite, l
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Cousin, function (sprite, otherSprite) {
     if (Talk == true) {
         Talk = false
+        controller.moveSprite(mySprite, 0, 0)
         story.setSoundEnabled(true)
         story.printCharacterText("Ah! Happy Birthday, to my favourite (and only) cousin!", "Jacko Lanten")
         story.printCharacterText("Here, weeks worth of rations for you to enjoy. I got your favourite: gravel flavour!", "Jacko Lanten")
@@ -168,6 +169,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Cousin, function (sprite, otherS
         story.spriteMoveToLocation(otherSprite, 0, 0, 25)
         sprites.destroy(otherSprite)
         story.printCharacterText("*Tuh*", "You")
+        controller.moveSprite(mySprite)
     }
 })
 function Armour () {
