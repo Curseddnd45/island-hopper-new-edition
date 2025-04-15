@@ -155,14 +155,18 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Cousin, function (sprite, otherS
     if (Talk == true) {
         Talk = false
         story.setSoundEnabled(true)
-        story.printCharacterText("Ah! Happy Birthday, to my favourite (and only) cousin!", "Jacko Lanten (Cousin)")
-        story.printCharacterText("Here, weeks worth of rations for you to enjoy. I got your favourite: gravel flavour!", "Jacko Lanten (Cousin)")
+        story.printCharacterText("Ah! Happy Birthday, to my favourite (and only) cousin!", "Jacko Lanten")
+        story.printCharacterText("Here, weeks worth of rations for you to enjoy. I got your favourite: gravel flavour!", "Jacko Lanten")
         for (let value of tiles.getTilesByType(assets.tile`myTile6`)) {
             tiles.setTileAt(value, assets.tile`myTile7`)
         }
         story.printCharacterText("*Burp* What strength did you get for the rations?", "You")
-        story.printCharacterText("10/10! Your fav?", "Jacko Lanten (Cousin)")
+        story.printCharacterText("10/10! Your fav?", "Jacko Lanten")
         story.printCharacterText("Errr…", "You")
+        story.printCharacterText("Um, sure!", "You")
+        story.printCharacterText("Bye!", "You")
+        story.spriteMoveToLocation(otherSprite, 0, 0, 25)
+        story.printCharacterText("*Tuh*", "You")
     }
 })
 function Armour () {
