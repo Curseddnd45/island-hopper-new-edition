@@ -303,6 +303,7 @@ mySprite = sprites.create(assets.image`myImage1`, SpriteKind.Player)
 tiles.setCurrentTilemap(tilemap`level1`)
 scene.cameraFollowSprite(mySprite)
 controller.moveSprite(mySprite)
+controller.moveSprite(mySprite)
 tiles.placeOnRandomTile(mySprite, assets.tile`myTile1`)
 Food_menu = [miniMenu.createMenuItem("Rations", img`
     . . . . . . . . . . . . . . . . 
