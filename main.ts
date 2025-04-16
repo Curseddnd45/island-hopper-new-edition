@@ -121,9 +121,9 @@ function Items () {
         `)
     myMenu.setPosition(scene.cameraProperty(CameraProperty.X), scene.cameraProperty(CameraProperty.Y))
     myMenu.onButtonPressed(controller.A, function (selection, selectedIndex) {
-        Item_menu.removeAt(selectedIndex)
+        Item_menu.removeAt(0)
         myMenu.moveSelection(miniMenu.MoveDirection.Up)
-        myMenu.setPosition(scene.cameraProperty(CameraProperty.X), scene.cameraProperty(CameraProperty.Y))
+        myMenu.setPosition(0, scene.cameraProperty(CameraProperty.Y))
     })
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile3`, function (sprite, location) {
