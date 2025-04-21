@@ -1,6 +1,9 @@
 namespace SpriteKind {
     export const Cousin = SpriteKind.create()
 }
+scene.onOverlapTile(SpriteKind.Player, assets.tile`tileGrass3`, function (sprite, location) {
+    tiles.setTileAt(location, assets.tile`tileGrass2`)
+})
 function Ranged () {
 	
 }
@@ -126,6 +129,9 @@ function Items () {
         myMenu.setPosition(0, scene.cameraProperty(CameraProperty.Y))
     })
 }
+scene.onOverlapTile(SpriteKind.Player, assets.tile`tileGrass1`, function (sprite, location) {
+    tiles.setTileAt(location, assets.tile`tileGrass0`)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile3`, function (sprite, location) {
     if (controller.A.isPressed()) {
         if (location.column == 22 && location.row == 2) {
