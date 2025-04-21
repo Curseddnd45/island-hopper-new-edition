@@ -163,18 +163,24 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Cousin, function (sprite, otherS
         controller.moveSprite(mySprite, 0, 0)
         story.setSoundEnabled(true)
         story.printCharacterText("Ah! Happy Birthday, to my favourite (and only) cousin!", "Jacko Lanten")
-        story.printCharacterText("Here, weeks worth of rations for you to enjoy. I got your favourite: gravel flavour!", "Jacko Lanten")
+        story.printCharacterText("Presents!", "You")
+        story.printCharacterText("Ooh, whats in them?", "You")
+        story.printCharacterText("Thats for you to find out!", "Jacko Lanten")
         for (let value of tiles.getTilesByType(assets.tile`myTile6`)) {
             tiles.setTileAt(value, assets.tile`myTile7`)
         }
-        story.printCharacterText("*Burp* What strength did you get for the rations?", "You")
-        story.printCharacterText("10/10! Your fav?", "Jacko Lanten")
-        story.printCharacterText("Errr…", "You")
-        story.printCharacterText("Um, sure!", "You")
+        story.printCharacterText("Not useable yet. You will gain skeleton key x1, life x1, and dice x7", "Items")
+        story.printCharacterText("Dont forget the cake!", "Jacko Lanten")
+        for (let value of tiles.getTilesByType(assets.tile`myTile8`)) {
+            tiles.setTileAt(value, assets.tile`myTile7`)
+        }
+        story.printCharacterText("*Burp* Mmmmm Yummmmy. Love it.", "You")
+        story.printCharacterText("Rate it, I made it myself.", "Jacko Lanten")
+        story.printCharacterText("10/10!", "You")
         story.printCharacterText("Bye!", "You")
-        story.spriteMoveToLocation(otherSprite, 0, 0, 25)
+        story.spriteMoveToLocation(otherSprite, 0, 0, 50)
         sprites.destroy(otherSprite)
-        story.printCharacterText("*Tuh*", "You")
+        story.printCharacterText("Wow! Jacko Lanten is the best cousin ever!", "You")
         controller.moveSprite(mySprite)
     }
 })
